@@ -70,4 +70,28 @@
 		it into smaller pieces to see how it's created by looking at the open source code and then just building
 		it together yourself using the simplest, the most basic building blocks that Flutter gives you access to
 */
+(10) Synchronous and Asynchronous
+/*
+	-> synchronous. Everything happens in synchrony.Step 1 happens, then step 2 happens and only when step 2 has 
+		concluded or has finished and we've gotten the image back does step 3 actually execute.
+
+	-> asynchronous. step 1 would execute as usual no changes there. But step 2, let's say that we're now loading
+		our image from NASA asynchronously. Well in this case while the image is loading and we're trying to wait on 
+		that data to come back, we can already execute step 3. And we don't have to wait for this to finish before we 
+		continue in our code.
+*/
+(11) State
+/*
+	-> stateful widgets and we know that these stateful widgets can be combined and we can track the state using a 
+		state object. Now that state object is there keep track of variables such as what is the configuration of my 
+		widgets, what are the properties of my widgets. And I can change all of those variables by using a set state and
+		it will update my app. Now in this case, the state object actually lives a lot longer and so it's got more 
+		lifecycle methods.
+*/
+(12)
+/*
+	-> Remember the  stateful widget is actually a separate object from its state. but they are linked
+    In other words, the state object knows which stateful widget it belongs to. The state object has a property
+    called widget which will point to its parent stateful widget.
+*/
 
