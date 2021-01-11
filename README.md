@@ -48,7 +48,7 @@ Simple weather app that find out the live weather data in the current location o
 * Use the TextField Widget to take user input.
 
 ## Code link
-* <a href="https://github.com/Hosam11/CompleteFlutterDevelopment/tree/main/bmi_calculator"  target="_blank"> **Clima App**</a>
+* <a href="https://github.com/Hosam11/CompleteFlutterDevelopment/tree/main/clima"  target="_blank"> **Clima App**</a>
 
 ## Demo
 ![clima-gif](https://user-images.githubusercontent.com/18370055/104140198-e53cff80-53b8-11eb-9f80-82a9c821f1ac.gif)
