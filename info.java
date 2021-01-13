@@ -88,10 +88,28 @@
 		it will update my app. Now in this case, the state object actually lives a lot longer and so it's got more 
 		lifecycle methods.
 */
-(12)
+(12) State
 /*
 	-> Remember the  stateful widget is actually a separate object from its state. but they are linked
     In other words, the state object knows which stateful widget it belongs to. The state object has a property
     called widget which will point to its parent stateful widget.
+*/
+(13) Show vs Hide 
+	/*
+		import '' show Platform
+		-> show me the platform class
+		import 'dart:io' hide Platform
+		-> import everything that's inside dart:io, so everything inside here, all the classes I want to be able to 
+			use it in this file but hide this thing called platform.
+	*/
+(14) consts
+/*
+	-> a const variable is a compile-time constant.
+*/
+(15) _.toStringAsFixed()
+/*
+	-> In order to convert our double into a single decimal place and also convert it into a string, there's a really
+		convenient method. So we can write BMI.toStringAsFixed and this returns a decimal point string and we can 
+		specify how many decimal places we want as the input.
 */
 
