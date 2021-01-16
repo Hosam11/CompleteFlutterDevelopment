@@ -52,4 +52,33 @@ Simple weather app that find out the live weather data in the current location o
 
 ## Demo
 ![clima-gif](https://user-images.githubusercontent.com/18370055/104140198-e53cff80-53b8-11eb-9f80-82a9c821f1ac.gif)
+##
+
+## Flash Chat App
+Incorporate Firebase into our Flutter apps. We'll be using Firebase Cloud Firestore as well as the Firebase authentication package to equip our app with a cloud based NoSQL database and secure authentication methods.
+
+**What we learn:**
+* Incorporate Firebase into your Flutter projects and use Firebase authentication to register and sign in users.
+* Create beautiful animations using the Flutter Hero widget and create custom aniamtions using Flutter's animation controller.
+* Mixins and how they differ from superclasses and Streams and how they work.
+* ListViews to build scrolling views and use Firebase Cloud Firestore to store and retrieve data on the fly.
+
+## Code link
+* <a href="https://github.com/Hosam11/CompleteFlutterDevelopment/tree/main/flash_chat"  target="_blank"> **Flash Chat App**</a>
+
+## Demo
+![chat gif](https://user-images.githubusercontent.com/18370055/104817053-7e3fa080-5827-11eb-85ad-6480267e3413.gif)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
