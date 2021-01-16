@@ -112,4 +112,84 @@
 		convenient method. So we can write BMI.toStringAsFixed and this returns a decimal point string and we can 
 		specify how many decimal places we want as the input.
 */
-
+(16) const in class must be static
+/*
+	-> Why does it have to be static? Well the reason is because by having a const that already has a default value,
+		that means that every object that gets created from this circle class will have the same value for this property
+		called Pi and it will never be changed. So if you think about that, that sounds an awful lot like how static 
+		variables work right? So it doesn't make sense to create a constant that is a property on a circle
+		if it's not going to be static. So whenever you want a constant value to be associated with a class, you have 
+		to make it into a static const
+*/
+(17) Hero Animation
+/*
+	-> it usually takes place on a screen transition. So when we go from page 1 of the screen to Page 2 of the screen
+	 	if they have a shared element, then that element will transition between page 1 and page 2.
+		So that element, being an image or an icon or whatever it may be, has to be present on both pages and it will 
+		have a continuous transition as the user navigates from page  1 on to page 2 of the app. Now because they have
+		that requirement of having a shared element, if you come from Android you might know this animation as a shared
+		element transition.
+*/
+(18) Custom Animaation
+/*
+	-> animations that we're gonna be building with Flutter require just three things and it's three important concepts
+		that you need to understand and to be able to really do what it is that you want it to do. And the three 
+		components are a ticker, an animation controller and an animation value.
+	-> Ticker: is exactly what it sounds like, it's a bit like the ticking of a clock. So we need something to be
+	 	able to count and take our animation along so that at each tick of the clock, our animation changes in value and
+		changes in shape or color whatever it may be. So for every time the ticker ticks, it triggers a new set state 
+		so that we can render something different
+	-> Animation Controller: and this is sort of the manager of the animation if you will. It's the animation 
+		controller class which is going to tell the animation to start, to stop, to go forwards, to loop back, how long
+		to animate for, all of these things are determined when we create an animation controller and set its properties.
+	-> Animation Value: and this is the thing that actually does the animating. So usually the animation value will go
+	 	from 0 to 1. And by using that value, we're able to change things such as the height or the size of a component
+		or the color or the alpha or the opacity of a component.
+*/
+(19) vsync
+/*
+ -> the ticker provider is going to be our state object -> WelcomeScreen state. And to be able to turn this 
+		WelcomeScreen state objects  into something that can act as a ticker, we have to use the keyword 'with' and 
+		specify that this class WelcomeScreen state can act as a single ticker provider. So it's like we're upskilling 
+		our WelcomeScreen state with a new ability. The ability to act as a ticker for a single animation. So if we had
+		multiple animations then we would use the TickerProviderStateMixin.
+*/
+(20) Mixins
+/*
+	-> And mixins enable your class with different types of capability. And unlike inheriting from a class, you can 
+		add multiple mixins to add many capabilities.
+*/
+(21) initState()
+/*
+	-> the init state it only gets called the first time that this state gets created. And that doesn't happen when
+		we reload.
+*/
+(22) CurvedAnimation
+/*
+	-> animation with only animation controller happens linearly. So as it grows in size it grows linearly in size.And
+		when we look at the value of the controller, you can see that the increments go from 0 through to 100 pretty 
+		evenly right? And it's pretty much doing this about 60 times a second.
+		
+	-> if we wanted this to look a little bit different? Well then we could use a class called Curved Animation.
+		And this way we can change the animation value along a curve. And the types of curves that we can use include
+		things such as bouncing
+	
+	-> make sure that when you're applying a curved animation to your controller that we can't actually have an upper
+		bound that's greater than 1. These curves have to draw from 0 to 1. So if we leave this upper bound in then 
+		we'll actually get an exception thrown and our app or crash.	
+*/
+(23) Tween Animation.
+/*
+ -> tween animation. It's basically a set of predefined tween animations that essentially go in between values.
+		So for example we have a starting color and we have an ending color, then our tween is going to go from
+		the beginning to the end in a smooth transition.
+	-> Now there's a whole bunch of other tween animations that you can use, such as the border radius tween
+		or the alignment tween. But what they all do is take a beginning value and an end value and you can structure
+		the code in the same way where we create the tween, we animated it and apply it to an animation controller.
+		And then we use the value of that animation inside our build method.
+*/
+(24) Flexible Widget
+/*
+ -> this is the size that it should try to take up the given pixels. But if it can't, then it can be flexible
+		about it and be smaller so that other parts of the screen is visible.'
+*/
