@@ -95,13 +95,13 @@
     called widget which will point to its parent stateful widget.
 */
 (13) Show vs Hide 
-	/*
-		import '' show Platform
-		-> show me the platform class
+/*
+	import '' show Platform
+	-> show me the platform class
 		import 'dart:io' hide Platform
-		-> import everything that's inside dart:io, so everything inside here, all the classes I want to be able to 
-			use it in this file but hide this thing called platform.
-	*/
+	-> import everything that's inside dart:io, so everything inside here, all the classes I want to be able to 
+		use it in this file but hide this thing called platform.
+*/
 (14) consts
 /*
 	-> a const variable is a compile-time constant.
@@ -146,7 +146,7 @@
 	 	from 0 to 1. And by using that value, we're able to change things such as the height or the size of a component
 		or the color or the alpha or the opacity of a component.
 */
-(19) vsync
+(19) vsyncس
 /*
  -> the ticker provider is going to be our state object -> WelcomeScreen state. And to be able to turn this 
 		WelcomeScreen state objects  into something that can act as a ticker, we have to use the keyword 'with' and 
@@ -192,4 +192,16 @@
 /*
  -> this is the size that it should try to take up the given pixels. But if it can't, then it can be flexible
 		about it and be smaller so that other parts of the screen is visible.'
+*/
+(25) mainAxis and crossAxis
+/*
+ -> the mainAxis here is the vertical axis because Columns are vertical (the crossAxis would be horizontal).
+*/
+(26) BuildContext
+/*
+ -> build context basically contains the information that tells the children widget where the parent is in the 
+		widget tree. So the information of where that widget lives is in that build context property and we need to 
+		pass it to any widget that require that to correctly render the child widgets and know where to slot it in 
+		the widget tree.
+
 */
